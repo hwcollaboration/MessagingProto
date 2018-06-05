@@ -13,10 +13,19 @@
 		535FEAE320C522BA00AB1719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535FEAE220C522BA00AB1719 /* Assets.xcassets */; };
 		535FEAE620C522BA00AB1719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535FEAE420C522BA00AB1719 /* LaunchScreen.storyboard */; };
 		535FEAF120C522BB00AB1719 /* MessagingProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FEAF020C522BB00AB1719 /* MessagingProtoUITests.swift */; };
+		535FEAFC20C532F800AB1719 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FEAFB20C532F800AB1719 /* SnapshotHelper.swift */; };
+		53AC1E7720C6524F00C30D35 /* MessagingProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC1E7620C6524F00C30D35 /* MessagingProtoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		535FEAED20C522BB00AB1719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 535FEAD020C522BA00AB1719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535FEAD720C522BA00AB1719;
+			remoteInfo = MessagingProto;
+		};
+		53AC1E7920C6524F00C30D35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 535FEAD020C522BA00AB1719 /* Project object */;
 			proxyType = 1;
@@ -36,6 +45,10 @@
 		535FEAEC20C522BB00AB1719 /* MessagingProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagingProtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		535FEAF020C522BB00AB1719 /* MessagingProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingProtoUITests.swift; sourceTree = "<group>"; };
 		535FEAF220C522BB00AB1719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535FEAFB20C532F800AB1719 /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		53AC1E7420C6524F00C30D35 /* MessagingProtoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagingProtoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AC1E7620C6524F00C30D35 /* MessagingProtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingProtoTests.swift; sourceTree = "<group>"; };
+		53AC1E7820C6524F00C30D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53AC1E7120C6524F00C30D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +81,7 @@
 			children = (
 				535FEADA20C522BA00AB1719 /* MessagingProto */,
 				535FEAEF20C522BB00AB1719 /* MessagingProtoUITests */,
+				53AC1E7520C6524F00C30D35 /* MessagingProtoTests */,
 				535FEAD920C522BA00AB1719 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +91,7 @@
 			children = (
 				535FEAD820C522BA00AB1719 /* MessagingProto.app */,
 				535FEAEC20C522BB00AB1719 /* MessagingProtoUITests.xctest */,
+				53AC1E7420C6524F00C30D35 /* MessagingProtoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,10 +112,20 @@
 		535FEAEF20C522BB00AB1719 /* MessagingProtoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				535FEAFB20C532F800AB1719 /* SnapshotHelper.swift */,
 				535FEAF020C522BB00AB1719 /* MessagingProtoUITests.swift */,
 				535FEAF220C522BB00AB1719 /* Info.plist */,
 			);
 			path = MessagingProtoUITests;
+			sourceTree = "<group>";
+		};
+		53AC1E7520C6524F00C30D35 /* MessagingProtoTests */ = {
+			isa = PBXGroup;
+			children = (
+				53AC1E7620C6524F00C30D35 /* MessagingProtoTests.swift */,
+				53AC1E7820C6524F00C30D35 /* Info.plist */,
+			);
+			path = MessagingProtoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +166,24 @@
 			productReference = 535FEAEC20C522BB00AB1719 /* MessagingProtoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		53AC1E7320C6524F00C30D35 /* MessagingProtoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53AC1E7D20C6524F00C30D35 /* Build configuration list for PBXNativeTarget "MessagingProtoTests" */;
+			buildPhases = (
+				53AC1E7020C6524F00C30D35 /* Sources */,
+				53AC1E7120C6524F00C30D35 /* Frameworks */,
+				53AC1E7220C6524F00C30D35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53AC1E7A20C6524F00C30D35 /* PBXTargetDependency */,
+			);
+			name = MessagingProtoTests;
+			productName = MessagingProtoTests;
+			productReference = 53AC1E7420C6524F00C30D35 /* MessagingProtoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +199,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					535FEAEB20C522BB00AB1719 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 535FEAD720C522BA00AB1719;
+					};
+					53AC1E7320C6524F00C30D35 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 535FEAD720C522BA00AB1719;
@@ -170,6 +225,7 @@
 			targets = (
 				535FEAD720C522BA00AB1719 /* MessagingProto */,
 				535FEAEB20C522BB00AB1719 /* MessagingProtoUITests */,
+				53AC1E7320C6524F00C30D35 /* MessagingProtoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +242,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		535FEAEA20C522BB00AB1719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53AC1E7220C6524F00C30D35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,6 +272,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				535FEAF120C522BB00AB1719 /* MessagingProtoUITests.swift in Sources */,
+				535FEAFC20C532F800AB1719 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53AC1E7020C6524F00C30D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AC1E7720C6524F00C30D35 /* MessagingProtoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +291,11 @@
 			isa = PBXTargetDependency;
 			target = 535FEAD720C522BA00AB1719 /* MessagingProto */;
 			targetProxy = 535FEAED20C522BB00AB1719 /* PBXContainerItemProxy */;
+		};
+		53AC1E7A20C6524F00C30D35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535FEAD720C522BA00AB1719 /* MessagingProto */;
+			targetProxy = 53AC1E7920C6524F00C30D35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +488,38 @@
 			};
 			name = Release;
 		};
+		53AC1E7B20C6524F00C30D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9JEG8EE2P;
+				INFOPLIST_FILE = MessagingProtoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.halware.MessagingProtoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessagingProto.app/MessagingProto";
+			};
+			name = Debug;
+		};
+		53AC1E7C20C6524F00C30D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9JEG8EE2P;
+				INFOPLIST_FILE = MessagingProtoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.halware.MessagingProtoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessagingProto.app/MessagingProto";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -437,6 +546,15 @@
 			buildConfigurations = (
 				535FEAF920C522BB00AB1719 /* Debug */,
 				535FEAFA20C522BB00AB1719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53AC1E7D20C6524F00C30D35 /* Build configuration list for PBXNativeTarget "MessagingProtoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53AC1E7B20C6524F00C30D35 /* Debug */,
+				53AC1E7C20C6524F00C30D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
