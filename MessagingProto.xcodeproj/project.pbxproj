@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33D96B5F4F50450E0F290154 /* Pods_MessagingProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCABC715918F2208C461AEB1 /* Pods_MessagingProto.framework */; };
+		530BD4E720CF43A800B7E51B /* MessagingProtoFastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BD4E620CF43A800B7E51B /* MessagingProtoFastTests.swift */; };
 		5328648D20CA585C00F7A346 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328648C20CA585C00F7A346 /* LoginController.swift */; };
 		5354610620CD3BE4002F5C7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5354610520CD35B1002F5C7A /* GoogleService-Info.plist */; };
 		535FEADC20C522BA00AB1719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FEADB20C522BA00AB1719 /* AppDelegate.swift */; };
@@ -17,9 +18,22 @@
 		535FEAE620C522BA00AB1719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535FEAE420C522BA00AB1719 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		530BD4E920CF43A800B7E51B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 535FEAD020C522BA00AB1719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535FEAD720C522BA00AB1719;
+			remoteInfo = MessagingProto;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1B299589E54C2FB6D256859A /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D8512B8631BE822B4756A2B /* Pods-MessagingProtoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagingProtoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagingProtoUITests/Pods-MessagingProtoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		530BD4E420CF43A800B7E51B /* MessagingProtoFastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagingProtoFastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		530BD4E620CF43A800B7E51B /* MessagingProtoFastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingProtoFastTests.swift; sourceTree = "<group>"; };
+		530BD4E820CF43A800B7E51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5328648C20CA585C00F7A346 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		5354610520CD35B1002F5C7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		535FEAD820C522BA00AB1719 /* MessagingProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagingProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		530BD4E120CF43A800B7E51B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		535FEAD520C522BA00AB1719 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +100,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		530BD4E520CF43A800B7E51B /* MessagingProtoFastTests */ = {
+			isa = PBXGroup;
+			children = (
+				530BD4E620CF43A800B7E51B /* MessagingProtoFastTests.swift */,
+				530BD4E820CF43A800B7E51B /* Info.plist */,
+			);
+			path = MessagingProtoFastTests;
+			sourceTree = "<group>";
+		};
 		5328648B20CA57DB00F7A346 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +123,7 @@
 			children = (
 				5354610520CD35B1002F5C7A /* GoogleService-Info.plist */,
 				535FEADA20C522BA00AB1719 /* MessagingProto */,
+				530BD4E520CF43A800B7E51B /* MessagingProtoFastTests */,
 				535FEAD920C522BA00AB1719 /* Products */,
 				36B53701C68BD6933ACD9352 /* Pods */,
 				14DA22C94959CAB8D6A13270 /* Frameworks */,
@@ -103,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				535FEAD820C522BA00AB1719 /* MessagingProto.app */,
+				530BD4E420CF43A800B7E51B /* MessagingProtoFastTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +155,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		530BD4E320CF43A800B7E51B /* MessagingProtoFastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530BD4ED20CF43A800B7E51B /* Build configuration list for PBXNativeTarget "MessagingProtoFastTests" */;
+			buildPhases = (
+				530BD4E020CF43A800B7E51B /* Sources */,
+				530BD4E120CF43A800B7E51B /* Frameworks */,
+				530BD4E220CF43A800B7E51B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				530BD4EA20CF43A800B7E51B /* PBXTargetDependency */,
+			);
+			name = MessagingProtoFastTests;
+			productName = MessagingProtoFastTests;
+			productReference = 530BD4E420CF43A800B7E51B /* MessagingProtoFastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		535FEAD720C522BA00AB1719 /* MessagingProto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 535FEAF520C522BB00AB1719 /* Build configuration list for PBXNativeTarget "MessagingProto" */;
@@ -153,6 +203,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Lawrie;
 				TargetAttributes = {
+					530BD4E320CF43A800B7E51B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 535FEAD720C522BA00AB1719;
+					};
 					535FEAD720C522BA00AB1719 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -173,11 +228,19 @@
 			projectRoot = "";
 			targets = (
 				535FEAD720C522BA00AB1719 /* MessagingProto */,
+				530BD4E320CF43A800B7E51B /* MessagingProtoFastTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		530BD4E220CF43A800B7E51B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		535FEAD620C522BA00AB1719 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +315,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		530BD4E020CF43A800B7E51B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530BD4E720CF43A800B7E51B /* MessagingProtoFastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		535FEAD420C522BA00AB1719 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +334,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		530BD4EA20CF43A800B7E51B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535FEAD720C522BA00AB1719 /* MessagingProto */;
+			targetProxy = 530BD4E920CF43A800B7E51B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		535FEADF20C522BA00AB1719 /* Main.storyboard */ = {
@@ -284,6 +363,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		530BD4EB20CF43A800B7E51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9JEG8EE2P;
+				INFOPLIST_FILE = MessagingProtoFastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.halware.MessagingProtoFastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessagingProto.app/MessagingProto";
+			};
+			name = Debug;
+		};
+		530BD4EC20CF43A800B7E51B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9JEG8EE2P;
+				INFOPLIST_FILE = MessagingProtoFastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.halware.MessagingProtoFastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MessagingProto.app/MessagingProto";
+			};
+			name = Release;
+		};
 		535FEAF320C522BB00AB1719 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -429,6 +540,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		530BD4ED20CF43A800B7E51B /* Build configuration list for PBXNativeTarget "MessagingProtoFastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530BD4EB20CF43A800B7E51B /* Debug */,
+				530BD4EC20CF43A800B7E51B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		535FEAD320C522BA00AB1719 /* Build configuration list for PBXProject "MessagingProto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -93,6 +93,16 @@
                ReferencedContainer = "container:MessagingProto.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "530BD4E320CF43A800B7E51B"
+               BuildableName = "MessagingProtoFastTests.xctest"
+               BlueprintName = "MessagingProtoFastTests"
+               ReferencedContainer = "container:MessagingProto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
