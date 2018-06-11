@@ -16,8 +16,11 @@
 //Outgoing message - Query : IGNORE
 //Outgoing message - Command : Expect to send
 
-@testable import MessagingProto
+
 import XCTest
+
+
+@testable import MessagingProto
 
 class Unittests: XCTestCase {
     

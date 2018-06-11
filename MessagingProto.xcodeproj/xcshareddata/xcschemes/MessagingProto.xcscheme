@@ -41,8 +41,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -61,6 +60,36 @@
                BlueprintIdentifier = "53D5811C20CCFC080010D817"
                BuildableName = "UITests.xctest"
                BlueprintName = "UITests"
+               ReferencedContainer = "container:MessagingProto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5369BADE20CEE8F500B30DED"
+               BuildableName = "Async Unit Tests.xctest"
+               BlueprintName = "Async Unit Tests"
+               ReferencedContainer = "container:MessagingProto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5369BAED20CF0A8100B30DED"
+               BuildableName = "UITesting.xctest"
+               BlueprintName = "UITesting"
+               ReferencedContainer = "container:MessagingProto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5369BAFB20CF0E6800B30DED"
+               BuildableName = "SlowUnitTests.xctest"
+               BlueprintName = "SlowUnitTests"
                ReferencedContainer = "container:MessagingProto.xcodeproj">
             </BuildableReference>
          </TestableReference>

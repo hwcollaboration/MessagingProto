@@ -1,15 +1,14 @@
 //
-//  MessagingProtoActualUITests.swift
-//  MessagingProtoActualUITests
+//  UITesting.swift
+//  UITesting
 //
-//  Created by Lawrie on 08/06/2018.
+//  Created by Lawrie on 11/06/2018.
 //  Copyright © 2018 Lawrie. All rights reserved.
 //
 
 import XCTest
 
-class MessagingProtoActualUITests: XCTestCase {
-    var app: XCUIApplication!
+class UITesting: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -29,6 +28,12 @@ class MessagingProtoActualUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testExample() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    
     func testLoginButton() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -42,15 +47,26 @@ class MessagingProtoActualUITests: XCTestCase {
         //Then
         XCTAssertTrue(logOutButton.exists)
     }
+    
+    
     func testLoginScreen() {
         
-        let app = XCUIApplication()
+        //Verify login screen is presented and textfields and button exists
         
+        let app = XCUIApplication()
         app.navigationBars["MessagingProto.View"].buttons["Logout"].tap()
         
-        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.tap()
-   
-     
+        XCTAssertTrue(app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.exists)
+        
+        XCTAssertTrue(app.textFields["Name"].exists)
+        XCTAssertTrue(app.textFields["Email"].exists)
+        
+        let passwordSecureTextField = app.secureTextFields["Password"]
+        XCTAssertTrue(passwordSecureTextField.exists)
+        
+        XCTAssertTrue(app.buttons["Register"].exists)
+        
+        
     }
     
 }

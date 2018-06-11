@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
+
 
 class LoginController: UIViewController {
     
-    
+    var ref: DatabaseReference!
     //Input text fields container view as a computed property
     var inputsContainerView: UIView = {
 
@@ -34,8 +36,46 @@ class LoginController: UIViewController {
         
         button.translatesAutoresizingMaskIntoConstraints = false
         
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
+        
         return button
     }()
+    
+    @objc func handleRegister(){
+        
+        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text else{
+            print("Form is not valid")
+            return
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            if  error != nil{
+                print(error!)
+                return
+            }
+            //successfully authenticated user
+            guard let uid = authResult?.user.uid else{
+                return
+            }
+            self.ref = Database.database().reference()
+            
+            let usersReference = self.ref.child("users").child(uid)
+            
+            let values = ["name":name, "email":email]
+            
+            usersReference.updateChildValues(values, withCompletionBlock: {
+                error, ref in
+                if error != nil{
+                    print("ERROR")
+                    return
+                }
+                else{
+                    print("Saved user successfully into Firebase db")
+                }
+            }
+            )
+        }
+    }
     
     var nameTextField: UITextField = {
         let textField = UITextField()

@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import FirebaseDatabase
+
 
 class ViewController: UITableViewController {
 
+//    var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
+//        ref = Database.database().reference()
 //        print(2.square())
     }
 
