@@ -1,0 +1,6 @@
+framework module Pods_MessagingProto {
+  umbrella header "Pods-MessagingProto-umbrella.h"
+
+  export *
+  module * { export * }
+}

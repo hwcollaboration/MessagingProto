@@ -20,20 +20,6 @@
                ReferencedContainer = "container:MessagingProto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "535FEAEB20C522BB00AB1719"
-               BuildableName = "MessagingProtoUITests.xctest"
-               BlueprintName = "MessagingProtoUITests"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -43,56 +29,6 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53D5810E20CCF9480010D817"
-               BuildableName = "Unittests.xctest"
-               BlueprintName = "Unittests"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53D5811C20CCFC080010D817"
-               BuildableName = "UITests.xctest"
-               BlueprintName = "UITests"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5369BADE20CEE8F500B30DED"
-               BuildableName = "Async Unit Tests.xctest"
-               BlueprintName = "Async Unit Tests"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5369BAED20CF0A8100B30DED"
-               BuildableName = "UITesting.xctest"
-               BlueprintName = "UITesting"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5369BAFB20CF0E6800B30DED"
-               BuildableName = "SlowUnitTests.xctest"
-               BlueprintName = "SlowUnitTests"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
