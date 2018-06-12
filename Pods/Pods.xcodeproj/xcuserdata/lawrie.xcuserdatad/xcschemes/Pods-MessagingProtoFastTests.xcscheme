@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -9,15 +9,15 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "535FEAEB20C522BB00AB1719"
-               BuildableName = "MessagingProtoUITests.xctest"
-               BlueprintName = "MessagingProtoUITests"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
+               BlueprintIdentifier = "3958013D3C31501093A597524F45D776"
+               BuildableName = "Pods_MessagingProtoFastTests.framework"
+               BlueprintName = "Pods-MessagingProtoFastTests"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,16 +29,6 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "535FEAEB20C522BB00AB1719"
-               BuildableName = "MessagingProtoUITests.xctest"
-               BlueprintName = "MessagingProtoUITests"
-               ReferencedContainer = "container:MessagingProto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -57,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "535FEAEB20C522BB00AB1719"
-            BuildableName = "MessagingProtoUITests.xctest"
-            BlueprintName = "MessagingProtoUITests"
-            ReferencedContainer = "container:MessagingProto.xcodeproj">
+            BlueprintIdentifier = "3958013D3C31501093A597524F45D776"
+            BuildableName = "Pods_MessagingProtoFastTests.framework"
+            BlueprintName = "Pods-MessagingProtoFastTests"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,15 +62,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "535FEAEB20C522BB00AB1719"
-            BuildableName = "MessagingProtoUITests.xctest"
-            BlueprintName = "MessagingProtoUITests"
-            ReferencedContainer = "container:MessagingProto.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

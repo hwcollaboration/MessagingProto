@@ -10,7 +10,14 @@ target 'MessagingProto' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
 
+  target 'MessagingProtoFastTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
-
+  target 'MessagingProtoSlowTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end

@@ -39,6 +39,26 @@
                ReferencedContainer = "container:MessagingProto.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "534EA14320CF626600F78024"
+               BuildableName = "MessagingProtoSlowTests.xctest"
+               BlueprintName = "MessagingProtoSlowTests"
+               ReferencedContainer = "container:MessagingProto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "534EA15F20CF649B00F78024"
+               BuildableName = "MessagingProtoMainUITests.xctest"
+               BlueprintName = "MessagingProtoMainUITests"
+               ReferencedContainer = "container:MessagingProto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

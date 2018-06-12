@@ -1,30 +1,16 @@
 //
-//  MessagingProtoFastTests.swift
-//  MessagingProtoFastTests
+//  MessagingProtoSlowTests.swift
+//  MessagingProtoSlowTests
 //
 //  Created by Lawrie on 12/06/2018.
 //  Copyright © 2018 Lawrie. All rights reserved.
 //
 
-//Object under test:
-
-//Incoming message - Query : Assert result
-//Incoming message - Command : Assert direct public side effects
-
-//Messages sent to self - IGNORE
-
-//Outgoing message - Query : IGNORE
-//Outgoing message - Command : Expect to send
-
-
-
 import XCTest
 @testable import MessagingProto
 
-class MessagingProtoFastTests: XCTestCase {
-    
+class MessagingProtoSlowTests: XCTestCase {
     var vcUnderTest: ViewController!
-    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -46,6 +32,7 @@ class MessagingProtoFastTests: XCTestCase {
         
         helloWorld = "hello world"
         XCTAssertEqual(helloWorld,  "hello world")
+        
     }
     
     func testPerformanceExample() {
