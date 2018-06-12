@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33D96B5F4F50450E0F290154 /* Pods_MessagingProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCABC715918F2208C461AEB1 /* Pods_MessagingProto.framework */; };
 		530BD4E720CF43A800B7E51B /* MessagingProtoFastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530BD4E620CF43A800B7E51B /* MessagingProtoFastTests.swift */; };
 		5328648D20CA585C00F7A346 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5328648C20CA585C00F7A346 /* LoginController.swift */; };
 		5354610620CD3BE4002F5C7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5354610520CD35B1002F5C7A /* GoogleService-Info.plist */; };
@@ -16,6 +15,7 @@
 		535FEAE120C522BA00AB1719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535FEADF20C522BA00AB1719 /* Main.storyboard */; };
 		535FEAE320C522BA00AB1719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535FEAE220C522BA00AB1719 /* Assets.xcassets */; };
 		535FEAE620C522BA00AB1719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535FEAE420C522BA00AB1719 /* LaunchScreen.storyboard */; };
+		F2219F90B56A16138B0C4EA5 /* Pods_MessagingProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61EC1CBDF175E860AEDF075 /* Pods_MessagingProto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B299589E54C2FB6D256859A /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4D8512B8631BE822B4756A2B /* Pods-MessagingProtoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagingProtoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagingProtoUITests/Pods-MessagingProtoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		530BD4E420CF43A800B7E51B /* MessagingProtoFastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagingProtoFastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		530BD4E620CF43A800B7E51B /* MessagingProtoFastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingProtoFastTests.swift; sourceTree = "<group>"; };
 		530BD4E820CF43A800B7E51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,16 +41,9 @@
 		535FEAE220C522BA00AB1719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		535FEAE520C522BA00AB1719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		535FEAE720C522BA00AB1719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B7889AAB58B68BF3B0E43B8 /* Pods-Unittests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unittests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Unittests/Pods-Unittests.release.xcconfig"; sourceTree = "<group>"; };
 		7FFD7E5FC27D034698B7B5D4 /* Pods-MessagingProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagingProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagingProto/Pods-MessagingProto.release.xcconfig"; sourceTree = "<group>"; };
-		813963BC76E9F15338F38C20 /* Pods-MessagingProtoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagingProtoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagingProtoUITests/Pods-MessagingProtoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9971D4DF14553A7B9B6AE880 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
-		A81947E1B1274D85C40A16FD /* Pods_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1F0F851714F528D1ECB489 /* Pods-Unittests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unittests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Unittests/Pods-Unittests.debug.xcconfig"; sourceTree = "<group>"; };
-		EA3770D97017D1AB62F73993 /* Pods_MessagingProtoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagingProtoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61EC1CBDF175E860AEDF075 /* Pods_MessagingProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagingProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB6B15BFB82B8622C68E3AF /* Pods-MessagingProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagingProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagingProto/Pods-MessagingProto.debug.xcconfig"; sourceTree = "<group>"; };
-		F908EE6F14A57A889A1F8B76 /* Pods_Unittests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unittests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCABC715918F2208C461AEB1 /* Pods_MessagingProto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagingProto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D96B5F4F50450E0F290154 /* Pods_MessagingProto.framework in Frameworks */,
+				F2219F90B56A16138B0C4EA5 /* Pods_MessagingProto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +68,7 @@
 		14DA22C94959CAB8D6A13270 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FCABC715918F2208C461AEB1 /* Pods_MessagingProto.framework */,
-				EA3770D97017D1AB62F73993 /* Pods_MessagingProtoUITests.framework */,
-				A81947E1B1274D85C40A16FD /* Pods_UITests.framework */,
-				F908EE6F14A57A889A1F8B76 /* Pods_Unittests.framework */,
+				D61EC1CBDF175E860AEDF075 /* Pods_MessagingProto.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,12 +78,6 @@
 			children = (
 				EBB6B15BFB82B8622C68E3AF /* Pods-MessagingProto.debug.xcconfig */,
 				7FFD7E5FC27D034698B7B5D4 /* Pods-MessagingProto.release.xcconfig */,
-				813963BC76E9F15338F38C20 /* Pods-MessagingProtoUITests.debug.xcconfig */,
-				4D8512B8631BE822B4756A2B /* Pods-MessagingProtoUITests.release.xcconfig */,
-				1B299589E54C2FB6D256859A /* Pods-UITests.debug.xcconfig */,
-				9971D4DF14553A7B9B6AE880 /* Pods-UITests.release.xcconfig */,
-				CD1F0F851714F528D1ECB489 /* Pods-Unittests.debug.xcconfig */,
-				7B7889AAB58B68BF3B0E43B8 /* Pods-Unittests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";

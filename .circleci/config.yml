@@ -10,11 +10,6 @@ jobs:
     macos:
       xcode: "9.0"
 
-    dependencies:
-      override:
-        - bundle install
-        - bundle exec pod install
-
     steps:
       - checkout
 
