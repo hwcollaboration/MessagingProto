@@ -13,13 +13,19 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: Fetch CocoaPods Specs
-          command: |
-            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
-      - run:
-          name: Install CocoaPods
-          command: pod install --verbose
+      # Install cocoapods (using version specified in Gemfile)
+      - restore_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+
+      - run: bundle check || bundle install --path vendor/bundle
+
+      - save_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      # Install specific pods
+      - run: bundle exec pod install
 
       # Build the app and run tests
       - run:
